@@ -1,9 +1,13 @@
 import React from 'react'
+import Navbar from './components/Navbar/navbar'
+import Hero from './components/Hero/Hero'
+
 
 const App = () => {
   return (
-    <div>App SAMIM dev
-      <h1>hello samim</h1>
+    <div>
+      <Navbar/>
+      <Hero/>
     </div>
   )
 }
