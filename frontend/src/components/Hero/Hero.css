@@ -24,19 +24,32 @@
   max-width: 900px;
 }
 
+
+.hero h1 span{
+  background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+  background-clip:text ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .hero p {
-  font-size: 20px;
-  color: #555;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
   max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 40px;
 }
 
 .hero-action {
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
-  flex-wrap: wrap;        /* makes buttons wrap on small screens */
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;       /* makes buttons wrap on small screens */
 }
 
 .hero-connect,
