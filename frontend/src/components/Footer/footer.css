@@ -1,0 +1,28 @@
+.footer{
+    margin: 50px 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;  
+} 
+.footer-top-left p{
+    font-size: 15px;
+    max-width: 300px;
+}
+.footer-top-right{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+} 
+.footer-email-input{
+    display: flex;
+    gap: 10px;
+    padding: 20px 30px;
+    border-radius: 25px;
+    background: #32323B;
+    padding: 20px;
+}  
+ 
