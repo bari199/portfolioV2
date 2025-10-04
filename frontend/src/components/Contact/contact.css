@@ -14,12 +14,13 @@
 
 .contact-title h1{
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 600;
 }
 
 .contact-title img{
     position: absolute;
+    width: 150px;
     bottom: 0;
     right: 0;
     z-index: -1;

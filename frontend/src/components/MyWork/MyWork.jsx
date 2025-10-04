@@ -8,7 +8,7 @@ const MyWork = () => {
     <div className="mywork">
       <div className="mywork-title">
         <h1>My latest work</h1>
-        <img src={theme_pattern} alt="" />
+        <img src={theme_pattern} alt="theme_pattern" />
       </div>
       <div className="mywork-container">
         {MyWork_data.map((work, index) => {
