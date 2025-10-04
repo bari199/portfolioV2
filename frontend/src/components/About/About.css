@@ -11,12 +11,13 @@
 }
 .about-title h1 {
   padding: 0px 30px;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
 }
 
 .about-title img {
   position: absolute;
+  width: 150px;
   bottom: 0;
   right: 0;
   z-index: -1;
@@ -35,7 +36,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 .about-skills {
@@ -52,7 +53,7 @@
 
 .about-skill p {
     min-width: 150px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
 }
 .about-skill hr{
