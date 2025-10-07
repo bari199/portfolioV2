@@ -13,7 +13,7 @@ const About = () => {
       </div>
 
       {/* Sections */}
-      <div className='about-sections'>
+      <div id='About' className='about-sections'>
         <div className="about-left">
             <img src={profile_img} alt="profile_img"/>
         </div>

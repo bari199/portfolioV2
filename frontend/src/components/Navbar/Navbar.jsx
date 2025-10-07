@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState("home");
+
+  // quick debug — remove later
+  // console.log("current menu:", menu);
+
   return (
     <div className="navbar">
       {/* Logo */}
@@ -10,13 +15,37 @@ const Navbar = () => {
         <img src={logo} alt="logo" />
       </div>
 
-      {/* Menu */}
+      {/* Menu Section */}
       <ul className="nav-menu">
-        <li>Home</li>
-        <li>About Me</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <li>
+          <p onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>
+            Home
+          </p>
+        </li>
+
+        <li>
+          <p onClick={() => setMenu("about")} className={menu === "about" ? "active" : ""}>
+            About Me
+          </p>
+        </li>
+
+        <li>
+          <p onClick={() => setMenu("services")} className={menu === "services" ? "active" : ""}>
+            Services
+          </p>
+        </li>
+
+        <li>
+          <p onClick={() => setMenu("portfolio")} className={menu === "portfolio" ? "active" : ""}>
+            Portfolio
+          </p>
+        </li>
+
+        <li>
+          <p onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>
+            Contact
+          </p>
+        </li>
       </ul>
 
       {/* Button */}
