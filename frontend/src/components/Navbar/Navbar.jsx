@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
+import themepartern from "../../assets/theme_pattern.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -12,7 +13,8 @@ const Navbar = () => {
     <div className="navbar">
       {/* Logo */}
       <div className="nav-logo">
-        <img src={logo} alt="logo" />
+        <h1>Barik</h1>
+        <img src={themepartern} alt="logo" />
       </div>
 
       {/* Menu Section */}

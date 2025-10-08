@@ -32,6 +32,12 @@
   flex-direction: column;
   gap: 80px;
 }
+
+.about-left img{
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
 .about-para {
   display: flex;
   flex-direction: column;

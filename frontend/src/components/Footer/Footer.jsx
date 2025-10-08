@@ -1,13 +1,15 @@
 import React from 'react'
 import './Footer.css'
 import footer_logo from '../../assets/footer_logo.svg'
+import theme_pattern from '../../assets/theme_pattern.svg'
 import user_icon from "../../assets/user_icon.svg";
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={footer_logo} alt="" />
+          <h1>Barik</h1>
+          <img src={theme_pattern} alt="" />
           <p>Iam a fronted developer from, KOLKATA with 10 year of exprience in companis like Micosoft, Tesla and also Apple. </p>
 
         </div>

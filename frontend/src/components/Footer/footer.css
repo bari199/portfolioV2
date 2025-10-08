@@ -1,62 +1,87 @@
-.footer{
-    margin: 50px 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.footer {
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.footer-top{
-    display: flex;
-    justify-content: space-between;  
-} 
-.footer-top-left p{
-    font-size: 15px;
-    max-width: 300px;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
 }
-.footer-top-right{
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-} 
-.footer-email-input{
-    display: flex;
-    gap: 10px;
-    padding: 20px 30px;
-    border-radius: 50px;
-    background: #32323B;
-    padding: 20px;
-} 
-.footer-email-input input{
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #a0a0a0;
-    font-family: outfit;
-    font-size: 18px;
+.footer-top-left {
+  position: relative; /* allows absolute children to position inside it */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-} 
-.footer-subscribe{
-    font-size: 15px;
-    padding: 22px 50px;
-    border-radius: 35px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF);
-    cursor: pointer;
-    transition: 0.3s;
+/* Style the heading */
+.footer-top-left h1 {
+  font-size: 40px;
+  position: relative;
+  z-index: 1; /* ensure text stays above the image */
 }
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-    font: size 15px; 
+
+/* Pattern behind or under the text */
+.footer-top-left img {
+  position: absolute;
+  width: 60px;
+  top: 25px;    /* adjust vertical position */
+  left: 35px;   /* adjust horizontal position */
+  z-index: 0;   /* send it behind the text */
+  opacity: 0.7; /* optional for subtle effect */
 }
-.footer-bottom-right{
-    display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
+
+
+
+.footer-top-left p {
+  font-size: 15px;
+  max-width: 300px;
 }
-.footer-email-input:hover{
-    border: 3px solid #a0a0a0;
+.footer-top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.footer-subscribe:hover{
-    border: 3px ;
-    transition: 0.1s;
-    transform: scale(1.1);
+.footer-email-input {
+  display: flex;
+  gap: 10px;
+  padding: 20px 30px;
+  border-radius: 50px;
+  background: #32323b;
+  padding: 20px;
+}
+.footer-email-input input {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #a0a0a0;
+  font-family: outfit;
+  font-size: 18px;
+}
+.footer-subscribe {
+  font-size: 15px;
+  padding: 22px 50px;
+  border-radius: 35px;
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  font: size 15px;
+}
+.footer-bottom-right {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.footer-email-input:hover {
+  border: 3px solid #a0a0a0;
+}
+.footer-subscribe:hover {
+  border: 3px;
+  transition: 0.1s;
+  transform: scale(1.1);
 }
