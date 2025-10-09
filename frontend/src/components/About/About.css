@@ -114,11 +114,11 @@
       align-items: start;
     }
     .about-title h1{
-      font-size:50px;
+      font-size: 30px;
       padding: 0;
     }
     .about-title img{
-      width: 130px;
+      width: 100px;
       right: -20px;
 
     }
