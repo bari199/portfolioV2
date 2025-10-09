@@ -109,7 +109,7 @@
     display: block;
     position: absolute;
     top: 25px;
-    right: 25px;
+    left: 25px;
     width: 28px;
   }
 }
@@ -121,7 +121,7 @@
   }
 
   .nav-menu {
-    width: 240px;
+    width: 340px;
     right: -540px;
     overflow: hidden;
   }
