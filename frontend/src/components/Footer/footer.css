@@ -36,7 +36,7 @@
 
 .footer-top-left p {
   font-size: 15px;
-  max-width: 300px;
+  max-width: 200px;
 }
 .footer-top-right {
   display: flex;
@@ -46,23 +46,23 @@
 .footer-email-input {
   display: flex;
   gap: 10px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   border-radius: 50px;
   background: #32323b;
-  padding: 20px;
+  padding: 10px;
 }
 .footer-email-input input {
   outline: none;
   border: none;
   background: transparent;
-  color: #a0a0a0;
   font-family: outfit;
+  color: #a0a0a0;
   font-size: 18px;
 }
 .footer-subscribe {
   font-size: 15px;
-  padding: 22px 50px;
-  border-radius: 35px;
+  padding: 20px 35px;
+  border-radius: 40px;
   background: linear-gradient(264deg, #df8908 -5.09%, #b415ff);
   cursor: pointer;
   transition: 0.3s;
@@ -84,4 +84,19 @@
   border: 3px;
   transition: 0.1s;
   transform: scale(1.1);
+}
+
+@media(max-width:768px){
+  .footer{
+    margin: 50px 70px;
+  }
+  .footer-top{
+    flex-direction:column;
+    gap: 50px;
+  }
+  .footer-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+  }
 }

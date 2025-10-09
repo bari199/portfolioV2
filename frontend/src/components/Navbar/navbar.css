@@ -3,14 +3,16 @@
   background-color: #161513;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;   /* padding instead of margin */
-  position: sticky;     /* keeps it fixed when scrolling */
+  padding: 10px 20px;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;        /* stays above other elements */
+  z-index: 1000;
 }
 
+
+/* ========== MENU SECTION ========== */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -19,20 +21,7 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
-  
-}
-
-.nav-logo{
-  position: relative;
- 
-}
-.nav-logo img{
-  position: absolute;
-  width: 60px;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-
+  transition: right 0.4s ease;
 }
 
 .nav-menu li {
@@ -41,13 +30,14 @@
 }
 
 .nav-menu li:hover {
-  color: #B923E1;  /* hover effect */
+  color: #b923e1;
 }
 
+/* ========== CONNECT BUTTON ========== */
 .nav-connect {
-  padding: 12px 12px;
+  padding: 12px 20px;
   border-radius: 50px;
-  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   font-size: 14px;
   cursor: pointer;
   color: white;
@@ -57,4 +47,93 @@
 
 .nav-connect:hover {
   transform: scale(1.05);
+}
+
+/* ========== THEME ICON ========== */
+.nav-menu li img {
+  display: block;
+  margin: 4px auto 0;
+  width: 22px;
+  height: auto;
+  opacity: 0.9;
+}
+
+/* ========== ANCHOR LINK ========== */
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* ========== MOBILE ICONS ========== */
+.nav-mob-open,
+.nav-mob-close {
+  display: none;
+  cursor: pointer;
+}
+
+/* ========== MOBILE VIEW (ALL SMALL SCREENS) ========== */
+@media (max-width: 1024px) {
+  .nav-connect {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: -320px;
+    background-color: #1f0016;
+    width: 480px;
+    height: 100%;
+    padding-top: 80px;
+    gap: 25px;
+    transition: right 0.4s ease;
+    z-index: 2000;
+  }
+
+  .nav-menu li {
+    font-size: 22px;
+    padding-left: 40px;
+  }
+
+  .nav-mob-open {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    width: 30px;
+  }
+
+  .nav-mob-close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 28px;
+  }
+}
+
+/* ========== EXTRA SMALL (Phones 320px–480px) ========== */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-menu {
+    width: 240px;
+    right: -540px;
+    overflow: hidden;
+  }
+
+  .nav-mob-open {
+    right: 15px;
+    top: 28px;
+    width: 26px;
+  }
+
+  .nav-menu li {
+    font-size: 20px;
+    padding-left: 30px;
+  }
 }

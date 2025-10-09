@@ -84,13 +84,23 @@
 }
 
 /* ✅ Responsive adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .hero img{
+    margin-top: 100px;
+    width: 260px;
+  }
   .hero h1 {
-    font-size: 42px;
+    margin-top: 25px;
+    width: 90%;
+    font-size: 50px;
   }
   .hero p {
+    width: 60%;
+    line-height: 32px;
+    margin: 10px 0px;
     font-size: 18px;
   }
+ 
 }
 
 @media (max-width: 768px) {
@@ -103,6 +113,11 @@
   }
   .hero p {
     font-size: 16px;
+  }
+  .hero-resume{
+    padding:20px 50px;
+    border-radius: 40px;
+
   }
 }
 
